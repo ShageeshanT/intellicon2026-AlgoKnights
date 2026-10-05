@@ -44,10 +44,10 @@ export function Pitch() {
           </div>
           <div className="flex items-center justify-between gap-3 px-4 pb-2 pt-4">
             <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-ink/50">Held in escrow</p>
-              <p className="font-display text-2xl font-bold">LKR 17,160</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-ink/70">Held in escrow</p>
+              <p className="whitespace-nowrap font-display text-2xl font-bold">LKR 17,160</p>
             </div>
-            <p className="max-w-[11rem] text-right text-xs text-ink/60">Released when you enter the handover code.</p>
+            <p className="max-w-[11rem] text-right text-xs text-ink/70">Released when you enter the handover code.</p>
           </div>
         </div>
       </Reveal>
