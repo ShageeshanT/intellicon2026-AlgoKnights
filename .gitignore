@@ -14,3 +14,6 @@ next-env.d.ts
 .lighthouseci
 
 .DS_Store
+
+# lighthouse runs against this copy of the site
+lhci
