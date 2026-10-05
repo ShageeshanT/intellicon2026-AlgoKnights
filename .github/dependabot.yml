@@ -5,6 +5,10 @@ updates:
     target-branch: dev
     schedule:
       interval: weekly
+    # Major versions usually need code changes, so those are upgraded by hand.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
     groups:
       npm:
         patterns: ["*"]
