@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/sections/Hero";
+import { Pitch } from "@/components/sections/Pitch";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Nav />
       <main className="flex-1">
         <Hero />
+        <Pitch />
       </main>
     </div>
   );
