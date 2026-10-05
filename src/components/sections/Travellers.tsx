@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import hero from "@/images/hero.jpg";
+import { Artwork } from "@/components/Artwork";
 import { SIGN_IN_URL } from "@/lib/site";
 
 export function Travellers() {
@@ -9,7 +8,7 @@ export function Travellers() {
       <div className="relative overflow-hidden rounded-[1.75rem] bg-ink sm:rounded-[2.25rem]">
         {/* The same picture as the hero, zoomed in on the sunset side. */}
         <div className="absolute inset-y-0 right-0 w-[160%]" aria-hidden>
-          <Image src={hero} alt="" fill placeholder="blur" sizes="160vw" className="object-cover object-[center_45%]" />
+          <Artwork sizes="160vw" className="absolute inset-0 h-full w-full object-cover object-[center_45%]" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/10" aria-hidden />
 

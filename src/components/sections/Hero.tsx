@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import hero from "@/images/hero.jpg";
+import { Artwork } from "@/components/Artwork";
 import { SIGN_IN_URL } from "@/lib/site";
 
 export function Hero() {
@@ -8,14 +7,11 @@ export function Hero() {
     <section className="mx-auto max-w-[1600px] px-3 pt-3 sm:px-5 sm:pt-5">
       {/* On wide screens the picture is as tall as the window, so the whole hero fits without scrolling. */}
       <div className="relative h-[560px] overflow-hidden rounded-[1.75rem] bg-ink sm:rounded-[2.25rem] lg:h-[clamp(560px,calc(100svh-2.5rem),820px)]">
-        <Image
-          src={hero}
-          alt="A cheerful suitcase waves at a plane flying over a coastal city at sunset"
-          fill
-          preload
-          placeholder="blur"
+        <Artwork
+          priority
           sizes="100vw"
-          className="object-cover object-[22%_center] lg:object-[center_45%]"
+          alt="A cheerful suitcase waves at a plane flying over a coastal city at sunset"
+          className="absolute inset-0 h-full w-full object-cover object-[22%_center] lg:object-[center_45%]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/35" aria-hidden />
 
