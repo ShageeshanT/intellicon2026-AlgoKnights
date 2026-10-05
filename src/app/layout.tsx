@@ -6,8 +6,8 @@ import "./globals.css";
 
 const display = localFont({
   src: [
-    { path: "../fonts/montserrat_regular.ttf", weight: "400", style: "normal" },
-    { path: "../fonts/montserrat_bold.ttf", weight: "700", style: "normal" },
+    { path: "../fonts/montserrat_regular.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/montserrat_bold.woff2", weight: "700", style: "normal" },
   ],
   variable: "--font-montserrat",
   display: "swap",
@@ -15,8 +15,8 @@ const display = localFont({
 
 const text = localFont({
   src: [
-    { path: "../fonts/opensans_regular.ttf", weight: "400", style: "normal" },
-    { path: "../fonts/opensans_bold.ttf", weight: "700", style: "normal" },
+    { path: "../fonts/opensans_regular.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/opensans_bold.woff2", weight: "700", style: "normal" },
   ],
   variable: "--font-opensans",
   display: "swap",
