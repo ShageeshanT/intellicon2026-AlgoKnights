@@ -58,3 +58,21 @@ jobs:
           name: site
           path: out
           retention-days: 7
+
+  lighthouse:
+    name: Lighthouse
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      # Served from the same folder it gets on GitHub Pages, so the asset paths match.
+      - uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: lhci${{ env.BASE_PATH }}
+      - uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
