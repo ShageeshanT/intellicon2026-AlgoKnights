@@ -2,6 +2,7 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/sections/Hero";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Pitch } from "@/components/sections/Pitch";
+import { Safety } from "@/components/sections/Safety";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Pitch />
         <HowItWorks />
+        <Safety />
       </main>
     </div>
   );
